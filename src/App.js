@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 class App extends Component {
@@ -47,8 +48,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <input type="text" value={this.state.text} onChange={this.handleChange} />
-        <p style={{color: this.state.color}}>{this.state.backgroundColor}</p>
+        <input className="form-control" type="text" value={this.state.text} onChange={this.handleChange} />
+        <h2 style={{color: this.state.color}}>{this.state.backgroundColor}</h2>
       </div>
     );
   }
