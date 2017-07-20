@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <input className="form-control" type="text" value={this.state.text} onChange={this.handleChange} />
+        <input className="form-control" type="text" value={this.state.text} placeholder="Type something already..." onChange={this.handleChange} />
         <h2 style={{color: this.state.color}}>{this.state.backgroundColor}</h2>
       </div>
     );
